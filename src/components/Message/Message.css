@@ -1,0 +1,60 @@
+/* Base styles for the alert */
+.alert {
+  position: fixed;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  min-height: 2rem;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+
+  & .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  /* Close button */
+  & .close-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+/* Success and Error styles */
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Animations */
+.slide-in {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.slide-out {
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  pointer-events: none;
+}

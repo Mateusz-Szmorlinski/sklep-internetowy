@@ -1,0 +1,33 @@
+:root {
+    --grey: #808080;
+    --action: #4AB11F;
+    --blue: #1875A7;
+    --red: #AB1818;
+    --white: #EEEEEE;
+    --black: #020202;
+    --button-blue: linear-gradient(-160deg, #8cbad3ff, #5298bdff, #1875a7ff, #12587eff, #0c3b54ff);
+    --button-action: linear-gradient(-160deg, #a5d88fff, #78c557ff, #4ab11fff, #388518ff, #255910ff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+
+    & p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+        
+    & button{
+        cursor: pointer;
+    }
+
+    & h1, h2, h3, button, a {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+}

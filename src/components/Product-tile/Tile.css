@@ -1,0 +1,77 @@
+.tile{
+    width: 20rem;
+    height: fit-content;
+    color: white;
+    margin: 2rem 1rem 2rem 1rem;
+    background-color: color-mix(in srgb, var(--action), black 50%);
+    border-radius: 25px;
+}
+
+.tile h3{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.tile p{
+    font-size: 1.2rem;
+}
+
+.tile .image-wrapper{
+    position: relative;
+    width: 20rem;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tile .text-wrapper{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+}
+
+.tile img{
+    width: 20rem;
+    vertical-align: middle;
+    transition: 1s ease-out;
+
+    &:hover{
+        scale: 1.07;
+    }
+}
+
+.tile a{
+    display: block;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        color: var(--action);
+    }
+}
+
+.tile .loading{
+    width: 5rem;
+    height: 5rem;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    .tile{
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .tile .wrapper{
+        width: 100%;
+        height: auto;
+    }
+
+    .tile img{
+        width: 100%;
+    }
+}

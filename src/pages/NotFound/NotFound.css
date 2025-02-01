@@ -1,0 +1,33 @@
+#not-found{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-height: 90svh;
+    margin: 4rem 0 3rem 0;
+    color: var(--black);
+    align-items: center;
+
+}
+
+#not-found h1{
+    font-size: 4rem;
+}
+
+#not-found img{
+    height: 2rem;
+    width: 2rem;
+}
+
+#not-found a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--black);
+    transition: 0.5s;
+
+    &:hover{
+        color: var(--action);
+    }
+}
